@@ -1,7 +1,30 @@
 aid: drag-bot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/drag-bot.png
 name: Drag Bot
-description: Drag Bot is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  drag&bot is a web-based industrial robotics software platform for the intuitive
+  setup, programming, and operation of industrial robots without prior robotics or
+  coding skills. Founded in Stuttgart in 2016 and acquired by KEBA in 2021, it lets
+  production workers assemble robot programs by dragging and dropping reusable
+  Function Blocks. The platform is built on ROS (Robot Operating System), making it
+  vendor-neutral across robot brands such as KUKA, ABB, Universal Robots, FANUC,
+  Denso, Kinova, and Aubo, as well as a wide range of grippers and peripheral tools.
+  Developers extend the platform with Python/JSON Function Blocks and ROS-based
+  Components (hardware drivers), and integrate with factory equipment over Modbus
+  TCP/IP and MQTT. drag&bot has been integrated into KEBA's Kemro X automation
+  platform. Its programmatic surface is exposed as ROS services, topics, and
+  messages rather than a public REST/HTTP API.
 url: https://raw.githubusercontent.com/api-evangelist/drag-bot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Robotics
+- Industrial Automation
+- ROS
+- Manufacturing
+- Robot Programming
+- No-Code
+- Industrial Tech
+- KEBA
 apis: []
+common:
+- type: Website
+  url: https://www.dragandbot.com/en/home
+- type: DeveloperPortal
+  url: https://help.dragandbot.com/development/introduction.html
+- type: Documentation
+  url: https://help.dragandbot.com/index.html
+- type: GitHubOrganization
+  url: https://github.com/dragandbot
+- type: PrivacyPolicy
+  url: https://www.dragandbot.com/en/data_privacy
+- type: DomainSecurity
+  url: security/drag-bot-domain-security.yml
+- type: LLMsTxt
+  url: llms/drag-bot-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

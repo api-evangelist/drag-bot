@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on the drag&bot hosts
+note: >-
+  No /.well-known discovery surface is published. drag&bot is a ROS-based
+  industrial robotics platform with no public REST/HTTP API, OAuth server, or
+  OIDC provider, so no discovery documents are expected. Recorded as a negative
+  result; no WellKnown pointer is wired in apis.yml because nothing was found.
+hosts:
+- host: https://www.dragandbot.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://help.dragandbot.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

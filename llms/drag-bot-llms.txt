@@ -1,0 +1,42 @@
+# drag&bot
+
+> drag&bot is a web-based industrial robotics software platform for the intuitive setup, programming, and operation of industrial robots without prior robotics or coding skills. Built on ROS (Robot Operating System) and vendor-neutral across major robot brands, it lets production workers assemble robot programs by dragging and dropping reusable Function Blocks. Founded in Stuttgart in 2016, acquired by KEBA in 2021, and integrated into KEBA's Kemro X automation platform.
+
+## Overview
+
+- Product: no-code / low-code robot programming via drag-and-drop Function Blocks
+- Foundation: ROS (Robot Operating System) — programmatic surface is ROS services, topics, and messages, not a public REST/HTTP API
+- Robot support: KUKA, ABB, Universal Robots, FANUC, Denso, Kinova, Aubo, Robotis, plus grippers and peripherals
+- Field integration: Modbus TCP/IP and MQTT modules; Siemens S7-1200 support
+- Extensibility: Python/JSON Function Blocks and ROS-based Components (hardware drivers)
+- Ownership: part of KEBA (Kemro X)
+
+## Docs
+
+- [Help & Documentation](https://help.dragandbot.com/index.html): product and functionality guides
+- [Developer Introduction](https://help.dragandbot.com/development/introduction.html): extend drag&bot via Function Blocks and Components
+- [Create a Simple Function Block](https://help.dragandbot.com/function-blocks/01_create_simple_function_block.html): Python/JSON block tutorial
+- [Create a drag&bot Component (ROS)](https://help.dragandbot.com/development/ros/00_dnb_component.html): ROS-package hardware driver
+- [ROS IDE](https://help.dragandbot.com/development/ide/ide_ros.html): development environment setup
+- [AnyRobot Interface — Overview & Setup](https://help.dragandbot.com/development/anyrobotinterface/overview_and_setup.html): integrate arbitrary robot arms
+- [Robot Movement Interface](https://help.dragandbot.com/development/introduction.html): ROS services, topics, and messages for robot motion
+
+## Code
+
+- [GitHub organization: dragandbot](https://github.com/dragandbot): ~39 ROS repositories (C++/Python/CMake/JS)
+- [dragandbot_common](https://github.com/dragandbot/dragandbot_common): drag&bot ROS messages and services
+- [dnb_component_example](https://github.com/dragandbot/dnb_component_example): reference drag&bot Component
+- [anyrobot_examples](https://github.com/dragandbot/anyrobot_examples): AnyRobot Interface examples
+- [pylon-ros-camera](https://github.com/dragandbot/pylon-ros-camera): Basler GigE/USB3 camera ROS driver
+
+## Company
+
+- [Website](https://www.dragandbot.com/en/home)
+- [Data Privacy](https://www.dragandbot.com/en/data_privacy)
+- [Imprint](https://www.dragandbot.com/en/imprint)
+- Backed by Speedinvest (Industrial Tech); acquired by KEBA (December 2021)
+
+## Notes
+
+- No public REST/HTTP API, OpenAPI, AsyncAPI, OAuth server, or /.well-known discovery surface is published (probed 2026-07-18).
+- Integration is code-level via ROS (Python Function Blocks, ROS Components) rather than a hosted web API.
